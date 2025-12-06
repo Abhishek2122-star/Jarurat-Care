@@ -1,71 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cancer Awareness & Support</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Modern Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cancer Awareness & Support</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-content">
+      <div class="logo">🎗 Cancer Care</div>
+      <nav class="nav-links">
+        <a href="#awareness">Awareness</a>
+        <a href="#stats">Impact</a>
+        <a href="#stories">Stories</a>
+        <a href="#support">Support</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- NAVBAR -->
-    <header>
-        <h2>Cancer Awareness & Support</h2>
-    </header>
-
+  <main>
     <!-- HERO SECTION -->
     <section class="hero">
-        <img src="hero.png" alt="Cancer Awareness Banner">
-        <div class="hero-text">
-            <h1>Together Against Cancer</h1>
-            <p>Awareness, early detection, and support can save lives.</p>
+      <img src="hero.png" height="50cm"alt="Cancer Awareness Banner" />
+      <div class="hero-text reveal">
+        <h1>Together Against Cancer</h1>
+        <p>
+          Awareness, early detection, and emotional support can save lives. Join
+          us in spreading hope and strength.
+        </p>
+        <button class="primary-btn">Learn How You Can Help</button>
+      </div>
+      <!-- floating ribbon -->
+      <!-- <div class="ribbon-bg"></div> -->
+    </section>
+
+    <!-- STATS / IMPACT SECTION -->
+    <section id="stats" class="stats reveal">
+      <h2>📊 Our Impact</h2>
+      <p class="stats-subtitle">
+        Small steps, big changes. Every effort counts in the fight against cancer.
+      </p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" data-target="12500">0</div>
+          <p>Lives Reached</p>
         </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="320">0</div>
+          <p>Healthcare Professionals</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="140">0</div>
+          <p>Awareness Programs</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="50000">0</div>
+          <p>Volunteers & Supporters</p>
+        </div>
+      </div>
     </section>
 
     <!-- AWARENESS CARDS -->
-    <section class="awareness">
-        <h2>📌 Stay Aware, Stay Safe</h2>
-
-        <div class="cards">
-            <div class="card">💗 Regular Health Checkups</div>
-            <div class="card">🚭 Avoid Tobacco</div>
-            <div class="card">🥗 Eat Healthy</div>
-            <div class="card">🏃 Exercise Daily</div>
-            <div class="card">🌞 Protect From UV Rays</div>
-            <div class="card">💉 Vaccination Helps</div>
+    <section id="awareness" class="awareness reveal">
+      <h2>📌 Stay Aware, Stay Safe</h2>
+      <p class="section-subtitle">
+        Healthy choices and regular screenings can significantly reduce cancer risk.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <span>💗</span>
+          Regular Health Checkups
         </div>
+        <div class="card">
+          <span>🚭</span>
+          Avoid Tobacco & Limit Alcohol
+        </div>
+        <div class="card">
+          <span>🥗</span>
+          Maintain a Balanced Diet
+        </div>
+        <div class="card">
+          <span>🏃‍♀️</span>
+          Exercise 30 Minutes Daily
+        </div>
+        <div class="card">
+          <span>🌞</span>
+          Protect from Harmful UV Rays
+        </div>
+        <div class="card">
+          <span>💉</span>
+          Get Vaccinated (HPV & Hep B)
+        </div>
+      </div>
     </section>
 
-    <!-- QUOTE BOX -->
-    <section class="quotes">
-        <h2>💬 Daily Motivation</h2>
+    <!-- QUOTE SECTION -->
+    <section class="quotes reveal" id="quotes">
+      <h2>💬 Daily Motivation</h2>
+      <p class="section-subtitle">
+        A few words of strength to keep you going.
+      </p>
 
-        <div class="quote-box">
-            <p id="quote">Loading quote...</p>
+      <div class="quote-box loading" id="quoteBox">
+        <p id="quote">Loading inspiring quote...</p>
+      </div>
+
+      <button id="newQuoteBtn" class="secondary-btn">✨ New Quote</button>
+    </section>
+
+    <!-- TESTIMONIAL / STORIES CAROUSEL -->
+    <section id="stories" class="testimonials reveal">
+      <h2>💖 Stories of Hope</h2>
+      <p class="section-subtitle">
+        Real people, real journeys. You are not alone in this fight.
+      </p>
+
+      <div class="testimonial-container">
+        <div class="testimonial-slide active">
+          <p>
+            “Early detection and awareness changed my life. This platform
+            helped me understand symptoms I used to ignore.”
+          </p>
+          <h4>— Riya, Breast Cancer Survivor</h4>
         </div>
+        <div class="testimonial-slide">
+          <p>
+            “The emotional support resources here gave my family the strength
+            to stand together during the toughest days.”
+          </p>
+          <h4>— Arjun, Caregiver</h4>
+        </div>
+        <div class="testimonial-slide">
+          <p>
+            “As a doctor, I share these awareness tips with my patients
+            regularly. Simple steps can save lives.”
+          </p>
+          <h4>— Dr. Meera, Oncologist</h4>
+        </div>
+      </div>
+    </section>
 
-        <button id="newQuoteBtn">✨ New Quote</button>
+    <!-- CTA / SUPPORT SECTION -->
+    <section id="support" class="cta reveal">
+      <div class="cta-content">
+        <h2>Support the Fight Against Cancer 💜</h2>
+        <p>
+          Your contribution can help fund awareness drives, patient counseling,
+          screenings, and support groups for families affected by cancer.
+        </p>
+        <div class="cta-buttons">
+          <button class="primary-btn">🤝 Become a Volunteer</button>
+          <button class="ghost-btn">💝 Donate (Sample CTA)</button>
+        </div>
+      </div>
     </section>
 
     <!-- CONTACT FORM -->
-    <section class="contact">
-        <h2>Contact Us</h2>
-
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <section id="contact" class="contact reveal">
+      <h2>Contact Us</h2>
+      <p class="section-subtitle">
+        Have questions, ideas, or need support? Reach out to us.
+      </p>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="primary-btn">Send Message</button>
+      </form>
     </section>
+  </main>
 
-    <footer>
-        <p>© 2025 Cancer Awareness & Support Initiative</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Cancer Awareness & Support Initiative • Built with ❤️ for Awareness</p>
+  </footer>
 
-<script src="script.js"></script>
+  <!-- FLOATING CHAT BUBBLE -->
+  <div class="chat-bubble">
+    <div class="chat-button" id="chatToggle">💬</div>
+    <div class="chat-window" id="chatWindow">
+      <h4>Need Support?</h4>
+      <p>
+        We’re here to help. Reach out to your nearest support group or
+        healthcare provider. 💗
+      </p>
+      <button class="secondary-btn small-btn">View Support Resources</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
